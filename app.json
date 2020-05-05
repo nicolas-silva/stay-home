@@ -1,0 +1,58 @@
+{
+  "expo": {
+    "name": "stay-home",
+    "slug": "stay-home",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "version": "1.0.2",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "updates": {
+      "enabled": true,
+      "checkAutomatically": "ON_LOAD",
+      "fallbackToCacheTimeout": 30000
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.nicolassilva.stayhome",
+      "buildNumber": "1.0.2",
+      "supportsTablet": true,
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "location",
+          "fetch"
+        ]
+      }
+    },
+    "android": {
+      "package": "com.nicolassilva.stayhome",
+      "versionCode": 2,
+      "permissions": [
+        "USE_FINGERPRINT",
+        "LOCATION",
+        "NOTIFICATIONS",
+        "USER_FACING_NOTIFICATIONS"
+      ]
+    },
+    "description": "Stay home is a great tool to help control the self isolation and lockdown, colecting user locations during the days.",
+    "androidNavigationBar": {
+      "visible": "immersive",
+      "barStyle": "dark-content",
+      "backgroundColor": "#000000"
+    },
+    "notification": {
+      "icon": "./assets/icon.png",
+      "color": "#000000",
+      "androidCollapsedTitle": "#{unread_notifications} new notifications"
+    }
+  }
+}
